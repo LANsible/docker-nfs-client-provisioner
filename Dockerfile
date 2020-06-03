@@ -2,7 +2,7 @@ ARG ARCHITECTURE
 #######################################################################################################################
 # Build static binary
 #######################################################################################################################
-FROM multiarch/alpine:${ARCHITECTURE}-v3.11 as builder
+FROM multiarch/alpine:${ARCHITECTURE}-v3.12 as builder
 
 # Add unprivileged user
 RUN echo nfs-client-provisioner:x:1000:1000:nfs-client-provisioner:/: > /etc_passwd
